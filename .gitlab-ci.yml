@@ -1,0 +1,15 @@
+image: node:22
+
+stages:
+  - install
+  - run
+
+install_dependencies:
+  stage: install
+  script: 
+  -npm install
+
+run_app:
+  stage: run
+  script:
+    -npm start
